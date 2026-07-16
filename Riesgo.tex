@@ -1,0 +1,566 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\decimalpoint
+
+\title[Evaluación de Riesgo Ambiental]{Metodología de Evaluación de Riesgos Ambientales}
+\subtitle{De la Fuente a la Estimación del Impacto en Salud}
+\author[ICAyCC]{Dr. José Agustín García Reynoso}
+\date{\today}
+\logo{\includegraphics[width=0.8cm] {CCA.png}}
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%\begin{frame}{Objetivos de Aprendizaje (Nivel: Comprensión)}
+%    Al finalizar esta sesión, el estudiante podrá:
+%    \begin{itemize}
+%        \item \textbf{Diferenciar} entre peligro y riesgo ambiental [1, 3].
+%        \item \textbf{Interpretar} el flujo de un contaminante desde su emisión hasta el receptor [4, 5].
+%        \item \textbf{Explicar} la relación entre la dosis recibida y la respuesta biológica (cancerígena y no cancerígena) [6, 7].
+%        \item \textbf{Resumir} los pasos críticos para caracterizar el riesgo en una comunidad [8, 9].
+%    \end{itemize}
+%\end{frame}
+%\begin{frame}
+%\frametitle{Outline}
+%\tableofcontents[pausesections]
+%\end{frame}
+
+\section{Conceptos Fundamentales}
+\begin{frame}{¿Qué es el Riesgo Ambiental?}
+    \begin{block}{Definiciones Clave}
+        \begin{itemize}
+            \item \textbf{Peligro:} Es la fuente del riesgo (la sustancia o agente físico) [3].
+            \item \textbf{Riesgo:} Es el \textbf{potencial} de que ocurran consecuencias adversas en la salud o el ambiente debido a la exposición a un peligro [1, 3].
+        \end{itemize}
+    \end{block}
+    \begin{exampleblock}{Relación}
+        El peligro es intrínseco a la sustancia; el riesgo depende de la probabilidad y magnitud de la exposición [3, 10].
+    \end{exampleblock}
+\end{frame}
+
+\section{El Proceso de Evaluación}
+\begin{frame}{Los Cuatro Pilares de la Evaluación (NAS/NRC)}
+    La metodología estándar se divide en cuatro pasos secuenciales [4, 11]:
+    \begin{enumerate}
+        \item \textbf{Identificación del Peligro:} ¿Qué daño puede causar la sustancia? [11, 12].
+        \item \textbf{Evaluación de la Exposición:} ¿Quién, cuánto y por qué ruta? [13, 14].
+        \item \textbf{Análisis de Dosis-Respuesta:} ¿Cuál es la relación entre cantidad y daño? [6, 11].
+        \item \textbf{Caracterización del Riesgo:} Integración de los pasos previos para estimar el impacto [9, 15].
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Identificación: Carcinógenos [3, 9]}
+    De acuerdo con las tablas de OEHHA/ARB, identifique los siguientes factores unitarios de riesgo (Inhalation Unit Risk):
+    \begin{table}
+        \centering
+        \begin{tabular}{|l|c|c|}
+            \hline
+            \textbf{Sustancia} & \textbf{No. CAS} & \textbf{URF $(\mu g/m^3)^{-1}$} \\
+            \hline
+            Arsénico (Inorgánico) & 7440-38-2 & $3.3 \times 10^{-3}$ \\
+            Benceno & 71-43-2 & $2.9 \times 10^{-5}$ \\
+            Formaldehído & 50-00-0 & $6.0 \times 10^{-6}$ \\
+            Cloruro de Vinilo & 75-01-4 & $7.8 \times 10^{-5}$ \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \textit{Nota: Los valores de URF permiten calcular el incremento de probabilidad de contraer cáncer en la vida [10].}
+\end{frame}
+
+\begin{frame}{Recuperación de Valores: No Cancerígenos [9, 11]}
+    Identifique los niveles de referencia (REL) para efectos crónicos (inhalación):
+    \begin{table}
+        \centering
+        \begin{tabular}{|l|c|c|}
+            \hline
+            \textbf{Sustancia} & \textbf{REL Crónico $(\mu g/m^3)$} \\
+            \hline
+            Acetaldehído & 140 \\
+            Acroleína & 0.35 \\
+            Benceno & 3.0 \\
+            Formaldehído & 9.0 \\
+            Mercurio (Inorgánico) & 0.03 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \textit{Si la concentración ambiental supera estos REL, el Índice de Riesgo (IR) será $> 1$, indicando peligro potencial [6, 8].}
+\end{frame}
+
+\section{Nivel 3: Aplicación}
+
+\begin{frame}{Aplicación 1: Cálculo de Riesgo de Cáncer [1, 10]}
+    \begin{block}{Problema}
+        Una comunidad está expuesta a una concentración promedio de \textbf{Benceno} de $0.5 \mu g/m^3$. Calcule la probabilidad de cáncer en el tiempo de vida (LCP).
+    \end{block}
+    
+    \textbf{Paso 1: Identificar URF [9].} \\
+    Para Benceno, $URF = 2.9 \times 10^{-5} (\mu g/m^3)^{-1}$.
+    
+    \textbf{Paso 2: Aplicar la fórmula [10].} \\
+    $Riesgo = URF \times Concentraci\acute{o}n$ \\
+    $Riesgo = (2.9 \times 10^{-5}) \times 0.5$ \\
+    $Riesgo = 1.45 \times 10^{-5}$
+    
+    \textbf{Resultado:} La probabilidad es de \textbf{14.5 casos por millón} de habitantes.
+\end{frame}
+
+\begin{frame}{Aplicación 2: Índice de Riesgo No Cancerígeno [1, 6]}
+    \begin{block}{Problema}
+        Se mide una concentración de \textbf{Formaldehído} de $18 \mu g/m^3$ en una zona industrial. Determine si el riesgo es aceptable.
+    \end{block}
+    
+    \textbf{Paso 1: Identificar REL Crónico [9, 11].} \\
+    Para Formaldehído, $REL = 9.0 \mu g/m^3$.
+    
+    \textbf{Paso 2: Calcular el Índice de Riesgo (IR) [6].} \\
+    $IR = \frac{Conc_{medida}}{Conc_{ref}}$ \\
+    $IR = \frac{18 \mu g/m^3}{9.0 \mu g/m^3}$ \\
+    $IR = 2.0$
+    
+    \textbf{Interpretación:} Al ser $IR > 1$, existe un riesgo potencial de efectos crónicos adversos y se requieren medidas de control [8, 12].
+\end{frame}
+
+\begin{frame}{Aplicación 3: Exposición Multiruta [1, 13]}
+    En la evaluación de impacto, el contaminante no solo se inhala.
+    \begin{exampleblock}{Caso Práctico}
+        Si una empresa emite partículas de Plomo, estas se depositan en el suelo ($C_{suelo}$) y son ingeridas por niños o asimiladas por plantas [14]. 
+    \end{exampleblock}
+    Para calcular la dosis total ($D$), debemos sumar:
+    \begin{center}
+        $D_{total} = D_{inhalaci\acute{o}n} + D_{ingesti\acute{o}n} + D_{d\acute{e}rmica}$ [15, 16]
+    \end{center}
+    Esto asegura que la protección a la salud considere todas las vías por las que el tóxico entra al organismo [13, 17].
+\end{frame}
+
+\section{Fuente y Dispersión}
+\begin{frame}{De la Fuente a la Concentración}
+    \begin{itemize}
+        \item \textbf{Fuentes:} Pueden ser puntuales (chimeneas), de área (depósitos), de volumen o pozos abiertos [16-18].
+        \item \textbf{Dispersión Atmosférica:} Modelos como \textbf{AERMOD} o \textbf{CALPUFF} simulan cómo el viento y la topografía transportan los contaminantes [19-21].
+        \item \textbf{Resultado:} Se obtiene la \textbf{GLC} (Ground Level Concentration), que es la concentración a nivel del suelo donde están los receptores [22, 23].
+    \end{itemize}
+\end{frame}
+
+\section{La Fuente Puntual}
+
+\begin{frame}{¿Qué es una Fuente Puntual?}
+    De acuerdo con las guías de la OEHHA y el SCAQMD, las fuentes puntuales son puntos de liberación específicos y confinados, tales como:
+    \begin{itemize}
+        \item \textbf{Chimeneas de escape} (exhaust stacks) [1].
+        \item \textbf{Venteos aislados} de edificios [1].
+    \end{itemize}
+    \begin{block}{Parámetros Críticos [2, 3]}
+        Para caracterizar una emisión puntual requerimos:
+        \begin{enumerate}
+            \item Altura y diámetro de la chimenea.
+            \item Velocidad de salida del gas ($m/s$).
+            \item Temperatura de salida ($K$).
+            \item Coordenadas UTM exactas.
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\section{Método 1: Factores de Emisión}
+
+\begin{frame}{Estimación mediante Factores de Emisión (FE)}
+    Este es el método indirecto o teórico. Se basa en la relación entre la cantidad de contaminante generado y el nivel de actividad de la fuente [4].
+    
+    \begin{alertblock}{Fórmula Fundamental [5]}
+        \[ E = AR \times EF \times (1 - CE) \]
+    \end{alertblock}
+    
+    \textbf{Donde:}
+    \begin{itemize}
+        \item \textbf{E:} Emisión (ej. $lb/$año o $g/s$).
+        \item \textbf{AR (Activity Rate):} Tasa de actividad (ej. galones de combustible quemados) [6].
+        \item \textbf{EF (Emission Factor):} Masa de contaminante por unidad de actividad.
+        \item \textbf{CE (Control Efficiency):} Eficiencia del equipo de control (filtros, lavadores) [6, 7].
+    \end{itemize}
+\end{frame}
+
+\section{Método 2: Mediciones en Chimenea}
+
+\begin{frame}{Mediciones Directas (Source Tests)}
+    Las mediciones en chimenea representan el escenario más real y deben realizarse bajo protocolos aprobados (como los del South Coast AQMD) [6, 8].
+    
+    \begin{block}{Cálculo de la Tasa de Emisión ($Q$)}
+        La emisión se determina multiplicando la concentración medida del contaminante por el flujo volumétrico del gas [3, 9].
+        \[ Q = C_{medida} \times V_{flow} \]
+    \end{block}
+    
+    \begin{itemize}
+        \item \textbf{$C_{medida}$:} Concentración del contaminante (ej. $mg/m^3$).
+        \item \textbf{$V_{flow}$:} Flujo de gas en la chimenea (ACFM o $m^3/s$) [9].
+    \end{itemize}
+\end{frame}
+
+\section{Comparativa y Reporte}
+
+\begin{frame}{Unidades de Reporte y Frecuencia}
+    Para una Evaluación de Riesgo a la Salud (ERS), las emisiones deben cuantificarse en dos escalas temporales [10, 11]:
+    
+    \begin{enumerate}
+        \item \textbf{Promedio Anual ($lb/yr$ o $g/s$):} Se utiliza para evaluar riesgos de \textbf{cáncer} y efectos \textbf{crónicos} no cancerígenos.
+        \item \textbf{Máxima Horaria ($lb/hr$ o $g/s$):} Es crítica para evaluar efectos \textbf{agudos} (exposiciones de corto plazo).
+    \end{enumerate}
+    
+    \textit{Nota: Los reportes deben indicar claramente si los valores fueron medidos o estimados [12, 13].}
+\end{frame}
+
+\section{Ejemplo de Aplicación}
+
+\begin{frame}{Ejemplo Práctico (Nivel: Aplicación)}
+    \begin{exampleblock}{Caso}
+        Una caldera quema 10,000 galones de Diesel al año. El factor de emisión para partículas es de 2 $lb/1000$ gal. ¿Cuál es su emisión anual?
+    \end{exampleblock}
+    
+    \textbf{Resolución:}
+    \begin{itemize}
+        \item $AR = 10,000$ gal/año
+        \item $EF = 0.002$ lb/gal
+        \item $E = 10,000 \times 0.002 = \textbf{20 lb/año}$
+    \end{itemize}
+    \vspace{1em}
+    \textbf{Pregunta de reflexión:} Si instalamos un ciclón con 90\% de eficiencia ($CE=0.90$), ¿cuántas libras se liberarían realmente a la atmósfera? [5, 7].
+\end{frame}
+\section{Conceptos Clave de dispersión}
+
+\begin{frame}{El Factor de Dilución ($\chi/Q$)}
+    El factor de dilución, denotado como $(\chi/Q)$, es una herramienta fundamental en la evaluación de riesgos:
+    \begin{block}{Definición}
+        Es la concentración ambiental modelada ($\chi$) basada en una tasa de emisión unitaria ($Q$) de **1 gramo por segundo** [1, 4].
+    \end{block}
+    \begin{itemize}
+        \item Se expresa en unidades de $(\mu g/m^3)/(g/s)$ [4].
+        \item Permite calcular rápidamente la concentración de cualquier sustancia multiplicándolo por su tasa de emisión específica: 
+        \[ C_{aire} = Q_{sustancia} \times (\chi/Q) \] [5]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Altura Física vs. Altura Efectiva ($H$)}
+    En el modelado de fuentes puntuales, el contaminante no sale simplemente de la chimenea, sino que asciende debido a su impulso y temperatura:
+    \begin{itemize}
+        \item \textbf{Altura Física ($h_s$):} La altura estructural de la chimenea (en este caso, 20 m) [6].
+        \item \textbf{Altura Efectiva ($H$):} La altura real desde donde comienza la dispersión horizontal tras el ascenso de la pluma (en este caso, 60 m) [2].
+    \end{itemize}
+    \begin{exampleblock}{Dato Crítico}
+        El modelo gaussiano utiliza la \textbf{altura efectiva ($H=60m$)} para calcular el impacto a nivel del suelo [2].
+    \end{exampleblock}
+\end{frame}
+
+\section{Modelo Gaussiano}
+
+\begin{frame}{La Ecuación de Dispersión Gaussiana}
+    Para receptores a nivel del suelo ($z=0$) y en la línea central del viento ($y=0$), la ecuación es:
+    \begin{equation*}
+        \chi(x) = \frac{Q}{\pi \sigma_y \sigma_z u} \exp\left( -\frac{1}{2} \frac{H^2}{\sigma_z^2} \right)
+    \end{equation*}
+    \textbf{Variables involucradas:}
+    \begin{itemize}
+        \item \textbf{$x$:} Distancia a la fuente (500 m).
+        \item \textbf{$\sigma_y, \sigma_z$:} Coeficientes de dispersión (dependen de la estabilidad D).
+        \item \textbf{$u$:} Velocidad del viento.
+        \item \textbf{$H$:} Altura efectiva (60 m) [2].
+    \end{itemize}
+\end{frame}
+
+\section{Aplicación Práctica}
+
+\begin{frame}{Estabilidad D y Distancia de 500 m}
+    \begin{itemize}
+        \item \textbf{Estabilidad D:} Representa condiciones neutras (frecuentes en días nublados o con viento moderado) [7].
+        \item \textbf{A 500 metros:} Los coeficientes $\sigma_y$ (dispersión horizontal) y $\sigma_z$ (dispersión vertical) se obtienen de tablas o curvas de Pasquill-Gifford.
+    \end{itemize}
+    \begin{block}{Interpretación}
+        Una mayor estabilidad vertical (como la clase F) resultaría en una pluma más estrecha y concentraciones más altas, mientras que la \textbf{estabilidad D} permite una dilución moderada antes de tocar el suelo [3].
+    \end{block}
+\end{frame}
+\section{Ejercicio Actualizado: Aplicación Práctica}
+
+\begin{frame}{Cálculo de la Concentración a 400 metros}
+    \begin{block}{Parámetros del Escenario}
+        \begin{itemize}
+            \item \textbf{Distancia ($x$):} 400 m.
+            \item \textbf{Altura Efectiva ($H$):} 60 m.
+            \item \textbf{Estabilidad D:} $\sigma_y = 29\text{ m}$, $\sigma_z = 15\text{ m}$.
+            \item \textbf{Velocidad del viento ($u$):} Se asume $1\text{ m/s}$ para cálculo unitario.
+        \end{itemize}
+    \end{block}
+
+    \textbf{Paso 1: Evaluar el término exponencial (Efecto de la altura):}
+    \[ \exp\left( -0.5 \cdot \frac{H^2}{\sigma_z^2} \right) = \exp\left( -0.5 \cdot \frac{60^2}{15^2} \right) = \exp(-8) \approx 0.000335 \]
+
+    \textbf{Paso 2: Calcular el factor de dilución ($\chi/Q$):}
+    \[ \frac{\chi}{Q} = \frac{1}{\pi \cdot 29 \cdot 15 \cdot 1} \cdot 0.000335 \approx 2.45 \times 10^{-7} \frac{\mu g/m^3}{g/s} \]
+
+    \textit{Nota: Este valor representa la capacidad de la atmósfera para diluir el contaminante en este punto específico [2].}
+\end{frame}
+
+\begin{frame}{Análisis de Comprensión}
+    \begin{alertblock}{Comparación con el caso anterior}
+        Al reducir la distancia de 500 m a 400 m, los valores de $\sigma$ disminuyen. ¿Cómo afecta esto a la dosis recibida por el receptor?
+    \end{alertblock}
+    \begin{itemize}
+        \item \textbf{Relación causa-efecto:} Valores de $\sigma$ más pequeños implican una pluma menos dispersa (más concentrada).
+        \item \textbf{Impacto de la altura:} Dado que $H=60m$ y $\sigma_z=15m$, el receptor está "lejos" del núcleo de la pluma ($H > 2\sigma_z$), lo que resulta en una concentración a nivel del suelo muy baja en este punto [3].
+        \item \textbf{Conclusión didáctica:} La dispersión no solo depende de la distancia, sino de la relación entre la altura de emisión y la capacidad de mezcla vertical.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Consideraciones de Seguridad y Entorno}
+    Para una estimación precisa en la región de las 40 empresas, el modelado debe considerar:
+    \begin{itemize}
+        \item \textbf{Topografía local:} Afecta cómo el viento transporta la pluma a 500 m [6, 8].
+        \item \textbf{Uso de suelo:} La rugosidad (urbana vs. rural) cambia los valores de $\sigma_y$ y $\sigma_z$ [9, 10].
+        \item \textbf{Calmas:} Los modelos gaussianos tradicionales pueden fallar si el viento es $< 1 m/s$; en esos casos, se recomienda complementar con \textbf{CALPUFF} [11, 12].
+    \end{itemize}
+\end{frame}
+
+\section{Conclusión}
+
+\begin{frame}{Resumen del Flujo de Trabajo}
+    \begin{center}
+        \textbf{Emisión ($Q$)} $\rightarrow$ \textbf{Ascenso de Pluma ($H=60m$)} $\rightarrow$ \textbf{Transporte (Distancia 500m)} $\rightarrow$ \textbf{Cálculo de $\chi/Q$} $\rightarrow$ \textbf{Concentración ($\chi$)}.
+    \end{center}
+    \vspace{1em}
+    \textbf{Pregunta de reflexión:} Si la altura efectiva fuera de solo 20 m (sin ascenso de pluma), ¿cómo esperas que cambie la concentración a 500 m?
+\end{frame}
+
+
+\section{Exposición y Dosis}
+\begin{frame}{Evaluación de la Exposición: Rutas y Dosis}
+    La exposición ocurre cuando el contaminante entra en contacto con el organismo [24].
+    \begin{itemize}
+        \item \textbf{Rutas de Exposición:}
+        \begin{itemize}
+            \item \textit{Obligatorias:} Inhalación, ingestión de suelo y absorción dérmica [25, 26].
+            \item \textit{Específicas:} Ingestión de agua, alimentos locales o leche materna (para sustancias lipofílicas como dioxinas o plomo) [25-27].
+        \end{itemize}
+        \item \textbf{Dosis:} Se calcula en $mg/kg-dia$. Considera la tasa de respiración, peso corporal y tiempo de exposición [28, 29].
+    \end{itemize}
+\end{frame}
+\section{Conceptos de Exposición}
+
+\begin{frame}{¿Qué es la Exposición?}
+    La evaluación de la exposición es el proceso de estimar la magnitud, frecuencia y duración del contacto humano con un agente químico [8, 12].
+    \begin{block}{Definiciones Críticas}
+        \begin{itemize}
+            \item \textbf{Exposición:} Condición de contacto entre un químico y la frontera de un organismo [12, 13].
+            \item \textbf{Ruta de Exposición:} El camino físico que el químico toma desde la fuente hasta el receptor [9, 13].
+            \item \textbf{Medio Ambiental:} Componentes (aire, suelo, agua) que facilitan la ruta [9, 13].
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{Clasificación de Sustancias}
+
+\begin{frame}{Inhalación vs. Multiruta}
+    \begin{itemize}
+        \item \textbf{Sustancias Gaseosas:} La mayoría de los compuestos orgánicos volátiles permanecen en el aire y la \textbf{inhalación} es la ruta de exposición primaria [10].
+        \item \textbf{Sustancias Particuladas:} Los metales y orgánicos semivolátiles se depositan en el suelo, plantas y agua, requiriendo un análisis \textbf{multipathway} (multiruta) [9, 10].
+        \item \textbf{Impacto:} El factor multiruta ($MP_c$) se utiliza para considerar todas las rutas adicionales a la inhalación directa [14].
+    \end{itemize}
+\end{frame}
+
+\section{Visualización de las Rutas}
+
+\begin{frame}{Flujo del Contaminante en el Ecosistema}
+    La siguiente imagen ilustra el transporte de tóxicos atmosféricos hacia el receptor [11, 15]:
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{rutas.png}
+    \end{center}
+    \small \textbf{Proceso:} Emisión ($Q$) $\rightarrow$ Dispersión $\rightarrow$ Deposición en plantas, suelo y agua $\rightarrow$ Ingestión o Inhalación por el Receptor [11, 15].
+\end{frame}
+
+\section{Rutas Obligatorias y Específicas}
+
+\begin{frame}{Rutas Obligatorias según el Receptor}
+    Para cada escenario de evaluación, se deben incluir rutas mínimas de contacto [6, 7, 16]:
+    \begin{table}
+        \centering
+        \begin{tabular}{|l|c|c|}
+            \hline
+            \textbf{Ruta de Exposición} & \textbf{Residencial} & \textbf{Trabajador} \\
+            \hline
+            Inhalación & Obligatoria & Obligatoria \\
+            Ingestión de Suelo & Obligatoria & Obligatoria \\
+            Exposición Dérmica & Obligatoria & Obligatoria \\
+            Consumo de Vegetales & Sitio-específica & No aplica \\
+            Leche Materna & Obligatoria* & No aplica \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \textit{*Obligatoria si se emiten plomo, dioxinas, furanos, PCBs o PAHs [6, 7, 16].}
+\end{frame}
+
+\begin{frame}{Rutas Sitio-Específicas}
+    Dependiendo del entorno de la fuente, se deben evaluar rutas adicionales [17, 18]:
+    \begin{itemize}
+        \item \textbf{Consumo de Pescado:} Si la instalación impacta cuerpos de agua con pesca local [19, 20].
+        \item \textbf{Productos Animales:} Ingestión de carne, leche de vaca y huevos si hay terrenos de pastoreo o granjas cercanas [18, 19].
+        \item \textbf{Agua Potable:} Si el contaminante se disuelve en reservorios de abasto de agua superficial [9, 21].
+    \end{itemize}
+\end{frame}
+
+\section{Conclusión}
+
+\begin{frame}{Integración de la Exposición y Dosis}
+    \begin{enumerate}
+        \item Las concentraciones modeladas en el aire ($\chi$) se usan para determinar la dosis diaria por inhalación [22, 23].
+        \item Los procesos de \textbf{bioconcentración} aumentan la cantidad del químico en tejidos vivos (peces, animales) antes de la ingestión humana [24, 25].
+        \item La dosis total sumada de todas las rutas permite caracterizar el riesgo final de cáncer o efectos crónicos [26, 27].
+    \end{enumerate}
+    \vspace{1em}
+    \textbf{Pregunta de reflexión:} ¿Por qué las rutas de ingestión de alimentos son obligatorias para residentes pero no para trabajadores externos? [7, 28].
+\end{frame}
+
+\section{Dosis-Respuesta}
+\begin{frame}{Dosis-Respuesta: Carcinógenos vs. No Carcinógenos}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \textbf{Efectos Cancerígenos} [6, 30]:
+        \begin{itemize}
+            \item Se asume que \textbf{no hay umbral} (cualquier dosis tiene un riesgo).
+            \item Se usa el \textbf{CPF} (Factor de Potencia Cancerígena).
+        \end{itemize}
+        \column{0.5\textwidth}
+        \textbf{Efectos No Cancerígenos} [7, 31]:
+        \begin{itemize}
+            \item Se asume que \textbf{hay un umbral} bajo el cual no hay daño.
+            \item Se usa el \textbf{REL} (Nivel de Exposición de Referencia).
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+\section{Estimación de Riesgo}
+\begin{frame}{Caracterización y Estimación del Riesgo}
+    \begin{block}{Riesgo de Cáncer}
+        $Riesgo = Dosis \times CPF \times ASF$ \\
+        El \textbf{ASF} (Factor de Sensibilidad por Edad) ajusta el riesgo por la mayor vulnerabilidad en la infancia [32, 33].
+    \end{block}
+    \begin{block}{Riesgo No Cancerígeno (Hazard Index)}
+        $HQ = \frac{Concentraci\acute{o}n}{REL}$ \\
+        Si el \textbf{HI} (suma de HQs por órgano blanco) es $> 1.0$, existe un potencial de efectos adversos [34-36].
+    \end{block}
+\end{frame}
+
+\section{Conclusión}
+\begin{frame}{Resumen del Flujo de Evaluación}
+    \begin{center}
+        \textbf{Emisión (Fuente)} $\rightarrow$ \textbf{Transporte (Dispersión)} $\rightarrow$ \textbf{Dosis (Exposición)} $\rightarrow$ \textbf{Efecto (Dosis-Respuesta)} $\rightarrow$ \textbf{Cálculo de Probabilidad (Riesgo)} [1, 8, 37].
+    \end{center}
+    \vspace{1em}
+    \textbf{Pregunta de reflexión:} ¿Por qué el riesgo de cáncer se expresa como una probabilidad y el riesgo no cancerígeno como un cociente? [34, 38].
+\end{frame}
+\section{La Necesidad de Comunicar}
+\begin{frame}{¿Por qué no basta con la Probabilidad?}
+    \begin{itemize}
+        \item Expresar el riesgo como ''$10$ chances en un millón'' es útil para reguladores, pero difícil de procesar para el público [3].
+        \item La comunicación efectiva requiere:
+        \begin{itemize}
+            \item \textbf{Aceptar} al público como un igual [1].
+            \item \textbf{Simplificar} sin perder rigor científico [2].
+            \item \textbf{Contextualizar} el riesgo frente a peligros cotidianos [4].
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section{Pérdida de Esperanza de Vida (LLE)}
+\begin{frame}{Métrica 1: Pérdida de Esperanza de Vida (LLE)}
+    La LLE traduce la probabilidad de cáncer ($R$) en días de vida perdidos debido a la exposición adicional a una sustancia [5].
+    \begin{block}{Fórmula Fundamental}
+        \[ LLE = R \times 1.1 \times 10^6 \]
+    \end{block}
+    \textbf{Ejemplo comparativo [4]:}
+    \begin{itemize}
+        \item Una exposición a formaldehído de 8 ppb en CDMX equivale a una probabilidad de $65.3 \times 10^{-6}$.
+        \item Esto representa una \textbf{pérdida de 72 días} de esperanza de vida.
+        \item \textit{Contexto:} Los accidentes en casa promedian una pérdida de 74 días [4].
+    \end{itemize}
+\end{frame}
+
+\section{Carga de Cáncer (Cancer Burden)}
+\begin{frame}{Métrica 2: Número de Casos (Cancer Burden)}
+    A diferencia del riesgo individual, la carga de cáncer estima el impacto en toda una comunidad expuesta durante 70 años [6, 7].
+    \begin{block}{Definición de Carga de Cáncer}
+        Es la suma del riesgo individual en cada punto del mapa multiplicado por la población en dicho punto [7, 8].
+    \end{block}
+    \begin{exampleblock}{Ejemplo de Proyección [9]}
+        Si 1,000,000 de personas están sujetas a un riesgo de $1 \times 10^{-6}$ (uno en un millón), se estima que habrá \textbf{1 caso de cáncer en exceso} en esa población a lo largo de su vida.
+    \end{exampleblock}
+\end{frame}
+
+\section{Reglas de Comunicación}
+\begin{frame}{Reglas para Informar Datos Técnicos}
+    Para que la comunidad comprenda los resultados, se deben seguir principios de transparencia y didáctica [1]:
+    \begin{enumerate}
+        \item \textbf{Honestidad y Apertura:} Ser franco sobre las incertidumbres de los modelos [1].
+        \item \textbf{Lenguaje Sencillo:} Si la información no se entiende, el mensaje ha fallado [2].
+        \item \textbf{Satisfacer necesidades de los medios:} Los periodistas buscan el peligro, el experto debe proveer la seguridad con datos claros [10].
+        \item \textbf{Derecho a saber:} La comunidad tiene derecho a estar informada sobre las instalaciones cercanas [11].
+    \end{enumerate}
+\end{frame}
+
+\section{Conclusión}
+\begin{frame}{Resumen de Comprensión}
+    \begin{center}
+        \textbf{Dato Técnico ($10^{-6}$)} $\rightarrow$ \textbf{Traducción (LLE / Casos)} $\rightarrow$ \textbf{Comprensión Pública}.
+    \end{center}
+    \vspace{1em}
+    \textbf{Pregunta de reflexión:} ¿Por qué una empresa con bajo riesgo individual pero una huella de emisión enorme podría generar una mayor preocupación pública que una empresa con alto riesgo pero pocos vecinos? [12].
+\end{frame}
+
+\section{Referencias y Lecturas Recomendadas}
+\begin{frame}{Referencias y Fuentes Técnicas}
+    \begin{thebibliography}{9}
+        \beamertemplatebookbibitems
+        \bibitem{OEHHA2015}
+        Office of Environmental Health Hazard Assessment (OEHHA).
+        \newblock {\em Air Toxics Hot Spots Program Guidance Manual for Preparation of Health Risk Assessments}.
+        \newblock California EPA, February 2015.
+
+        \bibitem{SCAQMD2024}
+        South Coast Air Quality Management District (AQMD).
+        \newblock {\em AB 2588 and Rule 1402 Supplemental Guidelines}.
+        \newblock September 2024.
+
+        \beamertemplatearticlebibitems
+        \bibitem{TSDCancer}
+        OEHHA.
+        \newblock {\em Technical Support Document for Cancer Potency Factors}.
+        \newblock May 2009.
+    \end{thebibliography}
+\end{frame}
+\begin{frame}{Referencias y Fuentes Técnicas}
+    \begin{thebibliography}{9}
+        \bibitem{TSDNonCancer}
+        OEHHA.
+        \newblock {\em Technical Support Document for the Derivation of Noncancer Reference Exposure Levels}.
+        \newblock June 2008.
+
+        \bibitem{TSDExposure}
+        OEHHA.
+        \newblock {\em Technical Support Document for Exposure Assessment and Stochastic Analysis}.
+        \newblock June 2012.
+    \end{thebibliography}
+\end{frame}
+\begin{frame}{Referencias [1, 9, 18, 19]}
+    \begin{thebibliography}{9}
+        \beamertemplatearticlebibitems
+        \bibitem{OEHHA2020} OEHHA/ARB. (2020). {\em Consolidated Table of Approved Risk Assessment Health Values}.
+        \bibitem{OEHHA1992} District Prioritization Procedures. (1992). {\em OEHHA Prioritization Procedures}.
+        \bibitem{Garcia} Garcia Reynoso, A. {\em Módulo 9: Riesgos Ambientales}. Diplomado en Administración de Riesgos.
+    \end{thebibliography}
+\end{frame}
+
+\end{document}
