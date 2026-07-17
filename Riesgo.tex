@@ -666,19 +666,20 @@ Descripción de la naturaleza y magnitud del riesgo humano, incluyendo incertidu
 \begin{frame}{Índice de Peligro}
 A partir de mediciones se puede estimar el HI
 \[
-\text{HI} = \frac{C_{\text{media}}}{C_{\text{ref}}}
+\text{HI} = \sum \frac{C_{\text{media}i}}{C_{\text{ref}i}}
 \]
 \begin{table}
 \centering
 \begin{tabular}{lccc}
 \toprule
-\textbf{Contaminante} & Conc. ($\mu$g/m$^3$) & Conc. Ref. ($\mu$g/m$^3$) & HI \\
+\textbf{Contaminante} & Conc. ($\mu$g/m$^3$) & Conc. Ref. ($\mu$g/m$^3$) & HQ \\
 \midrule
 Ozono & 77.7 & 180 & 0.43 \\
 NO$_2$ & 166.9 & 470 & 0.36 \\
 SO$_2$ & 46.6 & 66 & 0.07 \\
 PM$_{10}$ & 57.9 & 50 & 1.16 \\
-HCHO & 10.2 & 3.3 & 3.4 \\
+HCHO & 10.2 & 3.3 & 3.4 \\\hline
+ & & HI =& 5.42\\
 \bottomrule
 \end{tabular}
 \caption{Índice de riesgo para varios contaminantes (Enero-mayo 2002, Merced).}
@@ -687,12 +688,12 @@ HCHO & 10.2 & 3.3 & 3.4 \\
 
 \begin{frame}{Riesgo de cáncer}
 \[
-R = \text{FUR} \times \text{Conc.}
+R = \text{URF} \times \text{Conc.}
 \]
 donde:
 \begin{itemize}
 \item \(R\): Probabilidad de Cáncer en el Tiempo de Vida (PCTV).
-\item FUR: Factor Unitario de Riesgo.
+\item URF: Factor Unitario de Riesgo por inhalación.
 \item Conc.: Concentración del compuesto.
 \end{itemize}
 Pérdida de esperanza de vida:
