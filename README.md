@@ -88,6 +88,14 @@ Este material está dirigido a estudiantes y profesionales de:
 - Toxicología ambiental
 - Cursos de evaluación de impacto ambiental
 
+## Referencia relacionada
+
+Este material complementa el siguiente trabajo publicado por el autor sobre enseñanza de química/ciencias atmosféricas mediante modelación computacional:
+
+> García Reynoso, J. A., Mejía López, V. I., Peralta Rosales, O. A., Cruz Santiago, P. D., & Altuzar Villatoro, F. (2025). Enseñanza de química atmosférica mediante modelado computacional interactivo: Una aproximación innovadora con JupyterHub, JupyterLab y BOXMOX. *Educación Química*, 36(4). https://doi.org/10.22201/fq.18708404e.2025.4.91115
+>
+> Disponible en: https://www.revistas.unam.mx/index.php/req/article/view/91115/81510
+
 ## Licencia
 
 Este proyecto está distribuido bajo la licencia **GPL-3.0**. Consulta el archivo [`LICENSE`](./LICENSE) para más detalles.
