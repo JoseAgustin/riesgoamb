@@ -90,11 +90,11 @@ Este material está dirigido a estudiantes y profesionales de:
 
 ## Referencia relacionada
 
-Este material complementa el siguiente trabajo publicado por el autor sobre enseñanza de química/ciencias atmosféricas mediante modelación computacional:
+Este repositorio es material de apoyo para la siguiente propuesta didáctica publicada por los autores, específicamente sobre la enseñanza de la evaluación de riesgos para la salud por sustancias tóxicas atmosféricas:
 
-> García Reynoso, J. A., Mejía López, V. I., Peralta Rosales, O. A., Cruz Santiago, P. D., & Altuzar Villatoro, F. (2025). Enseñanza de química atmosférica mediante modelado computacional interactivo: Una aproximación innovadora con JupyterHub, JupyterLab y BOXMOX. *Educación Química*, 36(4). https://doi.org/10.22201/fq.18708404e.2025.4.91115
+> Altúzar Villatoro, F., & García Reynoso, J. A. (2025). Propuesta didáctica sobre evaluación de riesgos para la salud de las sustancias tóxicas atmosféricas. *Educación Química*, 36(1), 41-52. https://doi.org/10.22201/fq.18708404e.2025.1.88739
 >
-> Disponible en: https://www.revistas.unam.mx/index.php/req/article/view/91115/81510
+> Disponible en: https://www.revistas.unam.mx/index.php/req/article/view/88739/79357
 
 ## Licencia
 
